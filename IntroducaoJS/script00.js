@@ -1,3 +1,4 @@
+//Tipos de dados
 const texto = "Alô, mundo!!!";
 var boasVindas = "Bem-Vindos, Alunos de Js"
 boasVindas = "Boas Vindas Alunos"

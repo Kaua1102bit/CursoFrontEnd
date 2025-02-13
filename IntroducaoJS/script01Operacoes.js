@@ -1,5 +1,7 @@
 // Tipos de Operações em JavaScript
 
+//Operadores Aritméticos
+
 let a = 10
 let b = 3;
 
@@ -34,3 +36,4 @@ console.log(nota1>=7 && nota2>=7); //false
 
 // not (!)
 console.log(!true); //false
+
