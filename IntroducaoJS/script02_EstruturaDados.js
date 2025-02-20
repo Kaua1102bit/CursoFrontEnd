@@ -54,3 +54,4 @@ function saudacao(nome) {
 
 console.log(saudacao("Diogo"));
 
+//function void -> return vazio
