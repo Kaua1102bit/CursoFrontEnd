@@ -28,6 +28,15 @@ console.log(palavras);
 palavras.shift(); // remove o primeiro elemento
 console.log(palavras);
 
+//Alterar o Valor de um Elemento
+palavras[2]="Sacola";
+console.log(palavras);
+
+//percorrer um array (loop) - for
+for(let i = 0; i<numeros.length;i++){
+    console.log("numero["+i+"]="+numeros[i])
+}
+
 //ForEach - repetição em um vetor 
 palavras.forEach(palavra => {
     console.log(palavra);
