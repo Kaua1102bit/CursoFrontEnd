@@ -1,0 +1,74 @@
+/* Estilo para o corpo */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaeaea;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Estilo para o container principal */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd;
+}
+
+/* Estilo para os títulos */
+h1, h2, h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Estilo para botões */
+button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Estilo para inputs */
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Estilo para links */
+a {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo adicional para rodapé */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
