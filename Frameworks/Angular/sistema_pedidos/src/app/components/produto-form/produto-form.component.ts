@@ -12,10 +12,12 @@ export class ProdutoFormComponent {
    preco= 0;
 
    constructor(private dadosService: DadosService){}
+
     salvarproduto(){
       const produto = new Produto(this.dadosService.getProdutos.length + 1, this.nome, this.preco);
       this.dadosService.adicionarProduto(produto);
       this.nome = "";
       this.preco = 0;
 }
+
 }
