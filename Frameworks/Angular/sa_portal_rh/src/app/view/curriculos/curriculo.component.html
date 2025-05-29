@@ -1,1 +1,30 @@
-<p>curriculo works!</p>
+<h2>Currículos</h2>
+<form (ngSubmit)="cadastrarCurriculo()">
+  <input [(ngModel)]="curriculo.nome" name="nome" placeholder="Nome" required>
+  <input [(ngModel)]="curriculo.email" name="email" placeholder="Email" required type="email">
+  <input [(ngModel)]="curriculo.formacao" name="formacao" placeholder="Formação" required>
+  <input [(ngModel)]="curriculo.experiencia" name="experiencia" placeholder="Experiência" required>
+  <input [(ngModel)]="curriculo.habilidades" name="habilidades" placeholder="Habilidades" required>
+  <input [(ngModel)]="curriculo.linkedin" name="linkedin" placeholder="LinkedIn" required>
+  <button type="submit" [disabled]="!curriculo.nome || !curriculo.email || !curriculo.formacao || !curriculo.experiencia || !curriculo.habilidades || !curriculo.linkedin">Cadastrar</button>
+</form>
+
+<section class="lista-curriculos">
+  <div *ngFor="let curriculo of curriculos">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">CPF: {{curriculo.cpf}}</h5>
+        <h5 class="card-title">Nome: {{curriculo.nome}}</h5>
+        <p class="card-text">Email: {{curriculo.email}}</p>
+        <p class="card-text">Formação: {{curriculo.formacao}}</p>
+        <p class="card-text">Experiência: {{curriculo.experiencia}}</p>
+        <p class="card-text">Habilidades: {{curriculo.habilidades}}</p>
+        <p class="card-text">LinkedIn: <a [href]="curriculo.linkedin" target="_blank">{{curriculo.linkedin}}</a></p>
+        <button type="button" (click)="editarCurriculo(curriculo)">Editar</button>
+        <button type="button" (click)="removerCurriculo(curriculo.cpf)">Remover</button>
+        <button type="button" (click)="atualizarCurriculo(curriculo)">Atualizar</button>
+      </div>
+    </div>
+  </div>
+  <div class="rodape"></div>
+</section>

@@ -1,0 +1,49 @@
+<h2>Cadastrar Currículo</h2>
+<form>
+    <label>CPF</label>
+    <input type="text" name="cpf" [(ngModel)]="curriculo.cpf"> <br>
+
+    <label>Nome</label>
+    <input type="text" name="nome" [(ngModel)]="curriculo.nome"> <br>
+
+    <label>Email</label>
+    <input type="text" name="email" [(ngModel)]="curriculo.email"> <br>
+
+    <label>Formação</label>
+    <input type="text" name="formacao" [(ngModel)]="curriculo.formacao"> <br>
+
+    <label>Experiência</label>
+    <input type="text" name="experiencia" [(ngModel)]="curriculo.experiencia"> <br>
+
+    <button type="button" (click)="cadastrar()">Cadastrar Currículo</button>
+    <button type="button" (click)="atualizar(curriculo.cpf)">Atualizar Currículo</button>
+    <button type="button" (click)="excluir(curriculo.cpf)">Excluir Currículo</button>
+</form>
+
+<section class="listar-curriculos">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>CPF</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Formação</th>
+                <th>Experiência</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let curriculo of curriculos">
+                <td>{{curriculo.cpf}}</td>
+                <td>{{curriculo.nome}}</td>
+                <td>{{curriculo.email}}</td>
+                <td>{{curriculo.formacao}}</td>
+                <td>{{curriculo.experiencia}}</td>
+                <td>
+                    <button class="btn-listar" type="button" (click)="listarCurriculoUnico(curriculo)">Listar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<div class="rodape"></div>

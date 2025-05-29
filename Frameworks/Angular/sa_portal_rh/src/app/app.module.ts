@@ -10,6 +10,8 @@ import { InicioComponent } from './view/inicio/inicio.component';
 import { VagasComponent } from './view/vagas/vagas.component';
 import { HttpClientModule} from '@angular/common/http';
 import { PainelVagasComponent } from './view/painel-vagas/painel-vagas.component';
+import { FormsModule } from '@angular/forms';
+import { CurriculoComponent } from './view/curriculos/curriculo.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import { PainelVagasComponent } from './view/painel-vagas/painel-vagas.component
     FooterComponent,
     InicioComponent,
     VagasComponent,
-    PainelVagasComponent
+    PainelVagasComponent,
+    CurriculoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
